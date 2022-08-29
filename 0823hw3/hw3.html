@@ -1,0 +1,118 @@
+
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>hw3</title>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+	<link rel="stylesheet" type="text/css" href="css/hw3.css">
+</head>
+<body>
+
+	<div id="logo"></div>
+
+	<div id="menu">
+		<ul id="menulist">
+			<li>
+				<a href="#">課程總攬</a>
+				<ul class="submenu">
+					<li><a href="#">單元認證班</a></li>
+					<li><a href="#">產學認證班</a></li>
+					<li><a href="#">政府公費班</a></li>
+					<li><a href="#">企業服務</a></li>
+				</ul>
+			</li>
+
+			<li>
+				<a href="#">就業徵才</a>
+				<ul class="submenu">
+					<li><a href="#">徵才博覽會</a></li>
+					<li><a href="#">合作廠商</a></li>
+					<li><a href="#">面試媒合</a></li>
+					<li><a href="#">近期職缺</a></li>
+				</ul>
+			</li>
+
+			<li>
+				<a href="#">學員展現</a>
+				<ul class="submenu">
+					<li><a href="#">學員故事</a></li>
+					<li><a href="#">精彩作品</a></li>
+				</ul>
+			</li>
+
+			<li>
+				<a href="#">名師陣容</a>
+			</li>
+
+			<li>
+				<a href="#">關於我們</a>
+				<ul class="submenu">
+					<li><a href="#">品牌故事</a></li>
+					<li><a href="#">品牌大事紀</a></li>
+				</ul>
+			</li>
+
+		</ul>
+	</div>
+
+	<div id="content">
+		<img src="img/computer.jpg">
+	</div>
+
+	<div id="content2">
+		<ul id="list2">
+			<li>
+				<a href="#">聯絡我們</a>
+				<ul class="sublist">
+					<a href="#">
+						聯絡電話：(02)22225555<br />
+						聯絡信箱：hj777@hhjj.com.tw<br />
+						地址：台北市快樂區山悠悠路99號
+					</a>
+				</ul>
+			</li>
+		</ul>
+	</div>
+
+	<div id="footer">
+		年齡：<input type="text" id="age" name="age" />
+		<button onclick="showage()">送出</button>
+	</div>
+
+	<script type="text/javascript">
+		$(document).ready(function(){
+			$("#menulist li ul").hide();
+			$("#menulist li").hover(
+				function(){
+					$(this).find("ul").slideDown("fast");
+					$(this).find("a:first").addClass("active");
+				},function(){
+					$(this).find(".submenu").fadeOut("fast");
+					$(this).find("a").removeClass("active");
+				});
+		});
+		$(document).ready(function(){
+			$("#list2 li ul").hide();
+			$("#list2 li").hover(function(){
+				$(this).find("ul").slideDown("fast");
+				$(this).find("a:first").addClass("act");
+			},function(){
+				$(this).find(".sublist").fadeOut("fast");
+				$(this).find("a").removeClass("act");
+			});
+		});
+	</script>
+
+	<script type="text/javascript">
+		function showage(){
+			var age = document.getElementById("age").value;
+			if (age >= 15 && age <= 50){
+				alert("年齡符合");
+			}else{
+				alert("年齡不符合");
+			}
+		}
+	</script>
+
+</body>
+</html>
