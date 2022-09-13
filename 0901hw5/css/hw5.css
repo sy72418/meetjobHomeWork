@@ -1,0 +1,437 @@
+#logo{
+	width: 100%;
+	height: 51px;
+}
+#li1{
+	width: 100%;
+	height: 50px;
+	padding-left: 5px;
+	padding-right: 0px;
+}
+#li1 input[type="text"]{
+	float: right;
+	margin: 4px;
+	width: 185px;
+	height: 36px;
+	font-size: 20px;
+	padding-left: 8px;
+	border-radius: 18px;
+}
+#menu{
+	width: 95%;
+	height: 35px;
+	background-color: #372ddb;
+	padding-left: 70px; 
+	padding-top: 2px;
+
+}
+#menulist{
+	position: absolute;
+	z-index: 10;
+	height: 35px;
+	text-align: center;
+	font-size: 20px;
+}
+#menulist,#menulist ul{
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+#menulist li{
+	float: left;
+	background-color: #372ddb;
+	list-style: none; 
+	margin-right: 40px;
+}
+#menulist a{
+	color: #ffffff;
+	display: block;
+	text-decoration: none;
+	width: auto;
+}
+#menulist li ul{
+	position: absolute;
+	left: auto;
+	text-align: left;
+}
+
+.submenu li{
+	width: 100px;
+}
+.active{
+	background-color: #14186d;
+}
+
+#content1{
+	width: 100%;
+	height: 450px;
+	background-color: #000000;
+	display: grid;
+	grid-template-columns: 50px 900px 50px auto 50px;
+	grid-template-areas: "s1 mop1 s2 mop2 s3";
+}
+.mopic{
+	grid-area: mop1;
+	position: relative;
+	overflow: hidden;
+	list-style: none;
+}
+.mopic .mop{
+	width: 5000px;
+	position: absolute;
+	left: 0px;
+	top: 0px;
+	margin: 0px;
+	padding: 0px;
+}
+.mopic .mop img{
+	width: 900px;
+	height: 450px;
+}
+.mopic .mop li{
+	float: left;
+}
+.mopic .btn{
+	width: 30px;
+	height: 50px;
+	background-color: #ccc;
+
+	/*透明度*/
+	opacity: 0.5;
+	filter: alpha(opacity:0.5);
+	position: absolute;
+	top:50%;
+	margin-top:-25px;
+
+	cursor: pointer;
+	text-align: center;
+	line-height: 50px;
+	font-size: 50px;
+	color: #fff;
+	display: none;
+}
+.mopic .left{
+	left: 0px;
+}
+.mopic .right{
+	right: 0px;
+}
+.mopic:hover .btn{
+	display: block;
+}
+#picr{
+	grid-area: mop2;
+}
+.col{
+	position: relative;
+}
+.col img{
+	width: 100%;
+	height: 145px;
+	margin: 2px;
+}
+.text{
+	position: absolute;
+	color: white;
+	bottom: -5px;
+	left: 10px
+}
+.title1{
+	text-align: center;
+	width: 100%;
+	height: 45px;
+	padding-top: 25px; 
+	font-size: 30px;
+	font-weight: bold;
+}
+.title1 a{
+	color: #000000;
+}
+#content2{
+	width: 100%;
+	height: 425px;
+	display: grid;
+	grid-template-columns:auto 33% 33% 30% auto;
+	grid-template-areas: "b1 b2 b3 b4 b5"
+}
+.pt1{
+	grid-area: b2;
+	padding: 10px;
+}
+.pt1 img,.pt2 img{
+	height: 70%;
+	width:100%;
+}
+.pt2{
+	grid-area: b3;
+	padding: 10px;
+}
+.pt1 a, .pt2 a{
+	text-decoration: none;
+	color: #000000;
+}
+#texttitle1{
+	grid-area: b4;
+	padding: 10px;
+}
+#texttitle1 a{
+	text-decoration: none;
+	color: #362b1b;
+}
+#mbanner{
+	width: 95%;
+	height: 300px;
+	padding: 10px 35px;
+	background-color: #1A0D98;
+}
+#mbt1{
+	color: #fff;
+	height: 40px;
+}
+.mbp{
+	float: left;
+	width: 21%;
+	height: 200px;
+	margin-right: 20px;
+}
+.mbp a{
+	text-decoration: none;
+	color: #fff;
+	font-size: 22px;
+}
+.mbp a img{
+	width: 100%;
+	height: 80%;
+}
+.slogo{
+	padding:10px 25px; 
+	width: 100%;
+	height: 60px;
+}
+.show{
+	width: 100%;
+	height: 350px;
+	padding: 10px 25px;
+}
+.show1{
+	width: 40%;
+	height: 100%;
+	float: left;
+}
+.show1 a{
+	text-decoration: none;
+	color: #000000;
+	font-size: 22px;
+	font-weight: bold;
+}
+.show1 a img{
+	width: 100%;
+	height:70%;
+}
+.show2{
+	width: 60%;
+	height: 100%;
+	float: left;
+}
+.show3{
+	width: 30%;
+	height: 80%;
+	padding-left: 10px;
+	padding-right: 10px;
+	float: left;
+}
+.show3 a{
+	text-decoration: none;
+	color: #000000;
+	font-size: 21px;
+	font-weight: bold;
+}
+.show3 a img{
+	width: 100%;
+	height:70%;
+}
+#mshow{
+	width: 100%;
+	height: 400px;
+	padding: 10px 25px;
+	font-weight: bold;
+	font-size: 22px;
+	color: #030cfc;
+}
+.ms1{
+	margin: 15px 10px;
+	width: 18%;
+	height: 360px;
+	float: left;
+	border: 1px solid #8a8a8a;
+	border-radius: 15px;
+}
+.ms1 a{
+	text-decoration: none;
+}
+.ms2{
+	width: 100%;
+	height: 40%;
+	color: #000000; 
+}
+.ms2 img{
+	width: 100%;
+	height: 100%;
+	border-top-left-radius: 15px;
+	border-top-right-radius: 15px;
+}
+.mst{
+	width: 100%;
+	height:10%;
+	font-size: 21px;
+	padding-left: 10px;
+}
+
+.ms3{
+	width: 95%;
+	height: 25%;
+	padding: 40px 10px;
+	font-size: 18px;
+	color: #8a8a8a;
+}
+.ms4{
+	width: 95%;
+	height: 25%;
+}
+.ms4 img{
+	float: right;
+}
+#drama1{
+	width: 95%;
+	height: 400px;
+	padding: 10px 25px;
+}
+#dpic{
+	width: 50%;
+	height: 100%;
+	float: left;
+}
+#dpic a img{
+	width: 100%;
+	height: 100%;
+}
+#dt{
+	width: 45%;
+	height: 100%;
+	padding-right: 15px;
+	padding-left: 15px;
+	float: left;
+}
+#dtext{
+	width: 100%;
+	height: 85%;
+}
+#dtext a{
+	text-decoration: none;
+	font-size: 21px;
+	font-weight: bold;
+	color: #000000;
+}
+#dtext p{
+	font-size: 18px;
+	color: #8a8a8a;
+}
+#dtext1{
+	width: 100%;
+	height:15%;
+}
+#dtext1 a img{
+	height: 90%;
+	float: right;
+}
+.drama2{
+	width: 95%;
+	height: 280px;
+	padding: 10px 20px;
+}
+.d2{
+	width: 23%;
+	height: 250px;
+	margin: 5px 10px;
+	float: left;
+}
+.d2 a{
+	text-decoration: none;
+	color: #000000;
+	font-size: 20px;
+}
+.d2 a img{
+	width: 100%;
+	height: 80%;
+}
+#b2{
+	height: 400px;
+	width: 100%;
+	background: url(https://cc.tvbs.com.tw/portal_production/2022/images/post-banner.png) no-repeat;
+	justify-content: center;
+}
+#b3{
+	width: 88%;
+	height: 300px;
+	padding: 20px 125px;
+	justify-content: center;
+	align-items: center;
+}
+.b4{
+	width: 200px;
+	height: 100px;
+	color: #ffffff;
+	background-color: rgba(79,79,79,0.6);
+	float: left;
+	margin: 25px;
+	padding: 50px 10px;
+}
+.b4 a{
+	text-decoration: none;
+	color: #ffffff;
+	font-size: 19px;
+}
+#footer{
+	width: 90%;
+	height: 300px;
+	padding: 25px 80px;
+	background-color: #212121;
+}
+#top{
+	height: 180px;
+	width: 98%;
+	padding: 30px 0px;
+	border-bottom: 1px solid #999999;
+}
+#t1{
+	height: 100%;
+	width: 30%;
+	color: #ffffff;
+	font-size: 16px;
+	float: left;
+	margin-right: 20px;
+}
+#t1 p a{
+	color: #ffffff;
+}
+.t2{
+	font-size: 16px;
+	width: 9%;
+	height: 100%;
+	float: left;
+	margin: 0px 20px;
+	padding: 0px 20px;
+}
+.t2 p a{
+	text-decoration: none;
+	color: #999999;
+}
+#bottom{
+	height: 40px;
+	width: 98%;
+	text-align: right;
+	color: #999999;
+	padding: 10px 0px;
+	font-size: 16px;
+}
+
