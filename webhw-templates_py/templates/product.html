@@ -1,0 +1,34 @@
+{% extends 'basepage.html' %}
+
+{% block title %}
+商品服務
+{% endblock %}
+
+{% block css %}
+	<link rel="stylesheet" href="../static/css/product.css">
+{% endblock %}
+
+
+{% block mainpage %}
+	<form action="/product" method="get">
+		<button class="btn" type="submit" name="click" value="1">咖啡飲品</button>
+		<button class="btn" type="submit" name="click" value="2">茶瓦納</button>
+		<button class="btn" type="submit" name="click" value="3">星冰樂</button>
+		<button class="btn" type="submit" name="click" value="4">冷萃咖啡</button>
+		<button class="btn" type="submit" name="click" value="6">其他飲料</button>
+		<button class="btn" type="submit" name="click" value="5">罐裝飲品</button>
+	</form>
+	<p></p>
+
+	{% for row in result %}
+		<div class="drpic">
+			<a href="#">
+				<img class="drimg" src="../static/img/drink/{{row[0]}}">
+				<span>{{row[1]}}<br />{{row[2]}}</span>
+			</a>
+		</div>
+	{% endfor %}
+
+
+
+{% endblock %}

@@ -1,0 +1,28 @@
+{% extends 'basepage.html' %}
+
+{% block title %}
+公告
+{% endblock %}
+
+{% block css %}
+<link rel="stylesheet" href="../static/css/news.css">
+{% endblock %}
+
+{% block mainpage %}
+
+<div id="newstext">
+	<p>最新公告</p>
+
+	{% for row in result %}
+
+		<div class="text_news">
+			<a href="#">
+				<h3>{{row[0]}}</h1>
+				<h5>{{row[1]}}</h3>
+			</a>
+		</div>
+	{% endfor %}
+	
+</div>
+
+{% endblock %}
